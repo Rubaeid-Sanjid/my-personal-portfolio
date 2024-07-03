@@ -15,7 +15,9 @@ const Home = () => {
             applications using Tailwind CSS, JavaScript, React and Node JS. I'm
             always eager to learn and take on new challenges.
           </p>
-          <button className="btn bg-gradient-to-r from-[#5899E2] to-[#00BFFF] border-none text-white text-lg">Contact Me</button>
+          <button className="btn bg-gradient-to-r from-[#5899E2] to-[#00BFFF] border-none text-white text-lg">
+            Contact Me
+          </button>
         </div>
         <div className="flex-1 max-w-sm">
           <img src={profileImg} className="rounded-lg shadow-2xl" />
