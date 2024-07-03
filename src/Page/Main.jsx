@@ -3,9 +3,7 @@ import Navbar from "../Components/Navbar/Navbar";
 
 const Main = () => {
   return (
-    <div className="relative h-full w-full bg-slate-950 overflow-hidden">
-      <div className="absolute bottom-0 left-0 right-0 top-0 h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))] translate-x-[-50%] translate-y-[-10%]"></div>
-      <div className="absolute bottom-0 right-0 top-0 h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))] translate-x-[50%] translate-y-[-10%]"></div>
+    <div className="absolute top-0 z-[-2] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
       <Navbar />
       <Outlet />
     </div>
