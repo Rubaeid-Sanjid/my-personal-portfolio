@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="divider bg-neutral-content h-[1px] w-3/4 lg:w-1/2"></div>
       <nav className="grid grid-flow-col gap-4">
         <a href="#about" className="link link-hover">About me</a>
-        <a className="link link-hover">Contact</a>
+        <a href="#contact" className="link link-hover">Contact</a>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">

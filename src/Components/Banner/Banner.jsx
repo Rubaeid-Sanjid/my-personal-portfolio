@@ -16,9 +16,9 @@ const Banner = () => {
             applications using Tailwind CSS, JavaScript, React and Node JS. I'm
             always eager to learn and take on new challenges.
           </p>
-          <button className="btn bg-gradient-to-r from-[#3672b6] to-[#00BFFF] border-none text-white lg:text-lg uppercase">
+          <a href="#contact" className="btn bg-gradient-to-r from-[#3672b6] to-[#00BFFF] border-none text-white lg:text-lg uppercase">
             Contact Me
-          </button>
+          </a>
         </div>
         <div className="flex-1 max-w-sm">
           <img
