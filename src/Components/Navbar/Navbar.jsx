@@ -1,11 +1,10 @@
-import { NavLink } from "react-router-dom";
 import resume from "../../../src/assets/certificate/certificate.pdf";
 
 const Navbar = () => {
   const navlink = (
     <>
-      <NavLink className={'text-xl mx-2'} to={'/about'}>About</NavLink>
-      <NavLink className={'text-xl mx-2'} to={'/all-projects'}>Projects</NavLink>
+      <a className="text-xl mx-2 cursor-pointer" href="#about">About</a>
+      <a className="text-xl mx-2 cursor-pointer" href="#projects">Projects</a>
     </>
   );
   return (
