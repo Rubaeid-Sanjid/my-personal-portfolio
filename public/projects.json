@@ -4,7 +4,7 @@
       "name": "Scholarship Management Website",
       "description": "It is a scholarship management website. Users can apply for university scholarships and admin can manage all scholarships.",
       "technologies": ["React", "Tailwind CSS", "Firebase", "Node.js", "Express", "MongoDB"],
-      "image": "https://example.com/images/portfolio-website.png",
+      "image": "",
       "projectLink": "https://eduscholar-434da.web.app/",
       "repositoryLink": "https://github.com/Rubaeid-Sanjid/EduScholar-client-side"
     },
@@ -13,7 +13,7 @@
       "name": "Blog Platform",
       "description": "It is a tech related bloging website. Users can create, edit, and delete posts and add comments.",
       "technologies": ["React", "Tailwind CSS", "Firebase", "Node.js", "Express", "MongoDB"],
-      "image": "https://example.com/images/e-commerce-platform.png",
+      "image": "",
       "projectLink": "https://tech-talks-auth.web.app",
       "repositoryLink": "https://github.com/Rubaeid-Sanjid/Tech-Talks-client-side"
     },
@@ -22,7 +22,7 @@
       "name": "Online Art Shop",
       "description": "It is an online art gallery store. Users can add, update and delete their products to sell.",
       "technologies": ["React", "Tailwind CSS", "Firebase", "Node.js", "Express", "MongoDB"],
-      "image": "https://example.com/images/chat-application.png",
+      "image": "",
       "projectLink": "https://art-and-craft-store-auth.web.app",
       "repositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-client-side"
     },
@@ -31,7 +31,7 @@
       "name": "Portfolio Website",
       "description": "It is my personal portfolio website which I have build using React JS.",
       "technologies": ["React", "Tailwind CSS"],
-      "image": "https://example.com/images/blog-platform.png",
+      "image": "",
       "projectLink": "https://example.com/blog-platform",
       "repositoryLink": "https://github.com/Rubaeid-Sanjid/my-personal-portfolio"
     }
