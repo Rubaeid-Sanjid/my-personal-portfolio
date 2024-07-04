@@ -50,7 +50,7 @@ const Banner = () => {
           <motion.img
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{duration: 1, delay: 1.2}}
+          transition={{duration: 1.5, delay: 1.2}}
             src={profileImg}
             className="rounded-lg shadow-lg shadow-neutral-content"
           />
