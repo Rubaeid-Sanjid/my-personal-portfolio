@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import { motion } from "framer-motion"
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="card bg-gradient-to-r from-[#b1caed] to-[#dbe3f7]">
+    <motion.div whileHover={{ scale: 1.1 }} className="card bg-gradient-to-r from-[#b1caed] to-[#dbe3f7]">
       {/* <figure>
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -34,7 +35,7 @@ const ProjectCard = ({ project }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
