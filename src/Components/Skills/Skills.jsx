@@ -4,7 +4,7 @@ import { SiExpress, SiMongodb } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className="mt-8 lg:mt-24">
+    <div id="skills" className="mt-8 lg:mt-24">
       <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
       <h2 className="text-neutral-content font-semibold text-center text-4xl mb-5">Skills</h2>
       <div className="flex flex-wrap gap-6 justify-center items-center mt-10">
