@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <footer className="footer footer-center text-neutral-content rounded p-10">
-      <div className="divider bg-neutral-content h-[1px] w-1/2"></div>
+      <div className="divider bg-neutral-content h-[1px] w-3/4 lg:w-1/2"></div>
       <nav className="grid grid-flow-col gap-4">
         <a className="link link-hover">About me</a>
         <a className="link link-hover">Contact</a>
