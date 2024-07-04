@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const ProjectCard = ({ project }) => {
   return (
-    <motion.div whileHover={{ scale: 1.1 }} className="card bg-gradient-to-r from-[#b1caed] to-[#dbe3f7]">
+    <motion.div whileHover={{ scale: 1.1, transition: {duration: 0.5, ease: "easeInOut"} }} className="card bg-gradient-to-r from-[#b1caed] to-[#dbe3f7]">
       {/* <figure>
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
