@@ -25,15 +25,6 @@
       "image": "",
       "projectLink": "https://art-and-craft-store-auth.web.app",
       "repositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-client-side"
-    },
-    {
-      "id": 4,
-      "name": "Portfolio Website",
-      "description": "It is my personal portfolio website which I have build using React JS.",
-      "technologies": ["React", "Tailwind CSS"],
-      "image": "",
-      "projectLink": "https://example.com/blog-platform",
-      "repositoryLink": "https://github.com/Rubaeid-Sanjid/my-personal-portfolio"
     }
   ]
   
