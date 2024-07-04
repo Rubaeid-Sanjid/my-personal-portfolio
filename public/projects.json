@@ -6,7 +6,8 @@
       "technologies": ["React", "Tailwind CSS", "Firebase", "Node.js", "Express", "MongoDB"],
       "image": "",
       "projectLink": "https://eduscholar-434da.web.app/",
-      "repositoryLink": "https://github.com/Rubaeid-Sanjid/EduScholar-client-side"
+      "repositoryLink": "https://github.com/Rubaeid-Sanjid/EduScholar-client-side",
+      "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/EduScholar-server-side"
     },
     {
       "id": 2,
@@ -15,7 +16,8 @@
       "technologies": ["React", "Tailwind CSS", "Firebase", "Node.js", "Express", "MongoDB"],
       "image": "",
       "projectLink": "https://tech-talks-auth.web.app",
-      "repositoryLink": "https://github.com/Rubaeid-Sanjid/Tech-Talks-client-side"
+      "repositoryLink": "https://github.com/Rubaeid-Sanjid/Tech-Talks-client-side",
+      "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/Tech-Talks-server-side"
     },
     {
       "id": 3,
@@ -24,7 +26,8 @@
       "technologies": ["React", "Tailwind CSS", "Firebase", "Node.js", "Express", "MongoDB"],
       "image": "",
       "projectLink": "https://art-and-craft-store-auth.web.app",
-      "repositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-client-side"
+      "repositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-client-side",
+      "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-server-side"
     }
   ]
   

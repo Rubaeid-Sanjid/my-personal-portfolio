@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
             </div>
           ))}
         </div>
-        <div className="card-actions justify-between">
+        <div className="card-actions">
           <a
             href={project.projectLink}
             className="btn btn-sm bg-[#6eaef7] border-none text-white"
@@ -31,7 +31,13 @@ const ProjectCard = ({ project }) => {
             href={project.repositoryLink}
             className="btn btn-sm bg-[#6eaef7] border-none text-white"
           >
-            GitHub Repository
+            Client Repository
+          </a>
+          <a
+            href={project.serverRepositoryLink}
+            className="btn btn-sm bg-[#6eaef7] border-none text-white"
+          >
+            Server Repository
           </a>
         </div>
       </div>
