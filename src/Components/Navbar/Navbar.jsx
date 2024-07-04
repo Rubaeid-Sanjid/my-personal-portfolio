@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import resume from "../../../src/assets/certificate/certificate.pdf";
 
 const Navbar = () => {
   const navlink = (
@@ -41,7 +42,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navlink}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn bg-gradient-to-r from-[#3672b6] to-[#00BFFF] border-none text-white uppercase" href={resume} download>Download Resume</a>
       </div>
     </div>
   );
