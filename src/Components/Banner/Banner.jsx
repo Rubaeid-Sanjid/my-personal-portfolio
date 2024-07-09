@@ -1,4 +1,4 @@
-import profileImg from "../../assets/images/Sanjid.jpg";
+import profileImg from "../../assets/images/Portfolio_Profile.jpg";
 import { motion } from "framer-motion";
 
 const delayAnimation = (delay) => ({

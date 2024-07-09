@@ -17,7 +17,7 @@ const Footer = () => {
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a
-            href="https://www.linkedin.com/in/rubaeid-sanjid-03553a226/"
+            href="https://www.linkedin.com/in/rubaeid-sanjid/"
             target="_blank"
           >
             <FaLinkedin className="text-3xl" />

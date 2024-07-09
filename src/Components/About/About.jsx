@@ -49,7 +49,7 @@ const About = () => {
         </a>{" "}
         or connect with me on{" "}
         <a
-          href="https://www.linkedin.com/in/rubaeid-sanjid-03553a226/"
+          href="https://www.linkedin.com/in/rubaeid-sanjid/"
           target="_blank"
           className="text-blue-500 font-bold"
         >
