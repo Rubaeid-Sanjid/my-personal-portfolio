@@ -1,4 +1,4 @@
-import resume from "../../../src/assets/certificate/certificate.pdf";
+import resume from "../../../src/assets/resume/Rubaeid_Sanjid_Resume.pdf";
 
 const Navbar = () => {
   const navlink = (
