@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Scholarship Management Website",
+      "name": "EduScholar",
       "description": "It is a scholarship management website. Users can apply for university scholarships and admin can manage all scholarships.",
       "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
       "image": "https://i.postimg.cc/prstXcd1/Edu-Scholar.png",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "name": "Blog Platform",
+      "name": "TechTALKS",
       "description": "It is a tech related bloging website. Users can create, edit, and delete posts and add comments.",
       "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
       "image": "https://i.postimg.cc/V6B82kPw/Tech-Talks.png",
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "name": "Online Art Shop",
+      "name": "Canvas Creations",
       "description": "It is an online art gallery store. Users can add, update and delete their products to sell.",
       "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
       "image": "https://i.postimg.cc/j2xbTYR7/Canvas-Creations.png",
