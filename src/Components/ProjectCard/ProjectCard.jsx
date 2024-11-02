@@ -3,13 +3,13 @@ import { motion } from "framer-motion"
 
 const ProjectCard = ({ project }) => {
   return (
-    <motion.div whileHover={{ scale: 1.1, transition: {duration: 0.5, ease: "easeInOut"} }} className="card bg-gradient-to-r from-[#b1caed] to-[#dbe3f7]">
-      {/* <figure>
+    <motion.div whileHover={{ scale: 1.1, transition: {duration: 0.8, ease: "easeInOut"} }} className="card bg-gradient-to-r from-[#b1caed] to-[#dbe3f7]">
+      <figure>
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt=""
+          src={project.image}
+          alt={project.name}
         />
-      </figure> */}
+      </figure>
       <div className="card-body">
         <h2 className="card-title text-2xl">{project.name}</h2>
         <p>{project.description}</p>
@@ -23,19 +23,19 @@ const ProjectCard = ({ project }) => {
         <div className="card-actions">
           <a
             href={project.projectLink}
-            className="btn btn-sm bg-[#6eaef7] border-none text-white"
+            className="btn btn-sm bg-[#3f92f1] border-none text-white"
           >
             Live Site
           </a>
           <a
             href={project.repositoryLink}
-            className="btn btn-sm bg-[#6eaef7] border-none text-white"
+            className="btn btn-sm bg-[#3f92f1] border-none text-white"
           >
             Client Repository
           </a>
           <a
             href={project.serverRepositoryLink}
-            className="btn btn-sm bg-[#6eaef7] border-none text-white"
+            className="btn btn-sm bg-[#3f92f1] border-none text-white"
           >
             Server Repository
           </a>

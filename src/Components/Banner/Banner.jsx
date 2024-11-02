@@ -1,3 +1,4 @@
+import { Typewriter } from "react-simple-typewriter";
 import profileImg from "../../assets/images/Portfolio_Profile.jpg";
 import { motion } from "framer-motion";
 
@@ -22,24 +23,40 @@ const Banner = () => {
             className="text-4xl lg:text-5xl font-bold"
           >
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-[#7bdaeb] to-[#00BFFF] text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-[#00BFFF] to-[#7bdaeb] text-transparent bg-clip-text">
               Rubaeid Sanjid
             </span>
           </motion.h1>
-          <motion.p
+          <motion.h2
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.5 }}
-            className="py-6"
+            className="py-3 text-2xl lg:text-3xl"
           >
-            I'm a Junior Web Developer. I specialize in creating full-stack web
-            applications using Tailwind CSS, JavaScript, React and Node JS. I'm
+            <span>Junior </span>
+            <span className="text-[#00BFFF]">
+            <Typewriter
+              words={["MERN Stack", "Frontend", "Full-Stack"]}
+              loop={0}
+              className={"text-[#00BFFF]"}
+            />
+            </span>
+            <span> Developer</span>
+          </motion.h2>
+          <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 2 }}
+            className="py-5 text-lg"
+          >
+            I specialize in creating full-stack web
+            applications using <span className="font-semibold">Tailwind CSS, JavaScript, React JS, Node JS, Express JS and MongoDB</span>. I'm
             always eager to learn and take on new challenges.
           </motion.p>
           <motion.a
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 2 }}
+            transition={{ duration: 1, delay: 2.2 }}
             href="#contact"
             className="btn bg-gradient-to-r from-[#3672b6] to-[#00BFFF] border-none text-white lg:text-lg uppercase"
           >
@@ -48,9 +65,9 @@ const Banner = () => {
         </div>
         <div className="flex-1 max-w-sm">
           <motion.img
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{duration: 1.5, delay: 1.2}}
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.5, delay: 1.2 }}
             src={profileImg}
             className="rounded-lg shadow-lg shadow-neutral-content"
           />
