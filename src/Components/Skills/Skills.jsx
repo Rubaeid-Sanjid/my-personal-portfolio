@@ -49,7 +49,7 @@ const Skills = () => {
         </motion.div> */}
 
         <motion.div
-          variants={iconVariants(1.5)}
+          variants={iconVariants(1)}
           initial="initial"
           animate="animate"
           className="group h-24 w-24 [perspective:1000px] border-2 rounded-2xl"
@@ -87,7 +87,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          variants={iconVariants(1.5)}
+          variants={iconVariants(1)}
           initial="initial"
           animate="animate"
           className="group h-24 w-24 [perspective:1000px] border-2 rounded-2xl"
@@ -125,7 +125,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          variants={iconVariants(1.5)}
+          variants={iconVariants(1)}
           initial="initial"
           animate="animate"
           className="group h-24 w-24 [perspective:1000px] border-2 rounded-2xl"
@@ -163,7 +163,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          variants={iconVariants(1.5)}
+          variants={iconVariants(1)}
           initial="initial"
           animate="animate"
           className="group h-24 w-24 [perspective:1000px] border-2 rounded-2xl"
@@ -201,7 +201,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          variants={iconVariants(1.5)}
+          variants={iconVariants(1)}
           initial="initial"
           animate="animate"
           className="group h-24 w-24 [perspective:1000px] border-2 rounded-2xl"
