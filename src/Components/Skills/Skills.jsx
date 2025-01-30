@@ -62,7 +62,7 @@ const Skills = () => {
 
             {/* Back Side */}
             <div className="absolute h-full w-full flex justify-center items-center rounded-2xl text-slate-200 bg-gray-900 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-              <h3>HTML</h3>
+              <h3>HTML5</h3>
             </div>
           </div>
         </motion.div>
@@ -81,7 +81,7 @@ const Skills = () => {
 
             {/* Back Side */}
             <div className="absolute h-full w-full flex justify-center items-center rounded-2xl text-slate-200 bg-gray-900 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-              <h3>CSS</h3>
+              <h3>CSS3</h3>
             </div>
           </div>
         </motion.div>
