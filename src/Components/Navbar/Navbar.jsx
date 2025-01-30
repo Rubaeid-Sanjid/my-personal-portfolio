@@ -6,6 +6,7 @@ const Navbar = () => {
       <a className="text-xl mx-2 cursor-pointer" href="#about">About</a>
       <a className="text-xl mx-2 cursor-pointer" href="#skills">Skills</a>
       <a className="text-xl mx-2 cursor-pointer" href="#projects">Projects</a>
+      <a className="text-xl mx-2 cursor-pointer" href="#certifications">Certifications</a>
     </>
   );
   return (
