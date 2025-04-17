@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
           alt={project.name}
         />
       </figure>
-      <div className="card-body">
+      <div className="card-body text-slate-800">
         <h2 className="card-title text-2xl">{project.name}</h2>
         <p>{project.description}</p>
         <div className="card-actions justify-start my-4">
