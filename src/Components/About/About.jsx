@@ -14,12 +14,12 @@ const About = () => {
 
       <p className="text-lg mb-4">
         Hello, I'm <span className="font-bold">Rubaeid Sanjid</span>, a
-        passionate junior web developer with over 6 months of experience in
+        passionate web developer with over 1 year of experience in
         building dynamic and responsive websites.
       </p>
 
       <p className="text-lg mb-4">
-        Currently, I'm studying Computer Science and Engineering at{" "}
+        I graduated with a degree in Computer Science and Engineering from{" "}
         <a href="https://www.aiub.edu/" className="font-bold">
           American International University-Bangladesh (AIUB).
         </a>
@@ -32,8 +32,7 @@ const About = () => {
       </p>
 
       <p className="text-lg mb-4">
-        Outside of my personal work, I enjoy traveling, gossiping with friends
-        and family, and playing games. These hobbies help me stay creative and
+        Outside of my personal work, I enjoy traveling, spending time with friends and family, and playing games. These hobbies help me stay creative and
         energized.
       </p>
 
