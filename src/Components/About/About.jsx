@@ -9,7 +9,8 @@ const About = () => {
       id="about"
       className="container mx-auto px-3 lg:px-12 text-neutral-content"
     >
-      <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
+      {/* <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div> */}
+      <div className="divider bg-gradient-to-r from-transparent via-accent-blue/40 to-transparent h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
       <h2 className="text-4xl font-semibold mb-10 text-center">About Me</h2>
 
       <p className="text-lg mb-4">

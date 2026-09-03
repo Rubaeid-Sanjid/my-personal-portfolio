@@ -7,21 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: "#17140F",
-        surface: "#211D16",
+        bg: "#0A0A0F",
+        surface: "#12121A",
         text: {
-          primary: "#F2EDE4",
-          secondary: "#A79C8A",
+          primary: "#F5F5F7",
+          secondary: "#9CA3AF",
         },
         accent: {
-          gold: "#E0A458",
-          sage: "#6B8F71",
+          indigo: "#4F46E5",
+          blue: "#3B82F6",
+          cyan: "#38BDF8",
         },
       },
       fontFamily: {
         heading: ["Space Grotesk", "sans-serif"],
         body: ["Inter", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
+      },
+      boxShadow: {
+        glow: "0 0 40px rgba(59, 130, 246, 0.35)",
       },
     },
   },

@@ -23,7 +23,8 @@ const iconVariants = (duration) => ({
 const Skills = () => {
   return (
     <div id="skills" className="mt-8 lg:mt-24">
-      <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
+      {/* <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div> */}
+      <div className="divider bg-gradient-to-r from-transparent via-accent-blue/40 to-transparent h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ y: -100, opacity: 0 }}

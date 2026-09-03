@@ -9,7 +9,9 @@ import {
 const Footer = () => {
   return (
     <footer className="footer footer-center text-neutral-content rounded p-10">
-      <div className="divider bg-neutral-content h-[1px] w-3/4 lg:w-1/2"></div>
+      {/* <div className="divider bg-neutral-content h-[1px] w-3/4 lg:w-1/2"></div> */}
+      <div className="divider bg-gradient-to-r from-transparent via-accent-blue/40 to-transparent h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
+
       <nav className="grid grid-flow-col gap-4">
         <a href="#about" className="link link-hover">About me</a>
         <a href="#contact" className="link link-hover">Contact</a>

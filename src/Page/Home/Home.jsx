@@ -8,12 +8,12 @@ import Skills from "../../Components/Skills/Skills";
 const Home = () => {
   return (
     <div>
-        <Banner></Banner>
-        <About></About>
-        <Skills></Skills>
-        <Projects></Projects>
-        <Certificates></Certificates>
-        <Contact></Contact>
+      <Banner></Banner>
+      <About></About>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Certificates></Certificates>
+      <Contact></Contact>
     </div>
   );
 };

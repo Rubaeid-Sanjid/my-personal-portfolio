@@ -15,7 +15,9 @@ const Projects = () => {
   console.log(projects.length);
   return (
     <div id="projects" className="mt-8 lg:my-24">
-      <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
+      {/* <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div> */}
+      <div className="divider bg-gradient-to-r from-transparent via-accent-blue/40 to-transparent h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
+
       <h2 className="text-neutral-content text-center font-semibold text-4xl mb-5">
         Projects
       </h2>

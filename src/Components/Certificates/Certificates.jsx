@@ -39,7 +39,10 @@ const Certificates = () => {
   return (
     <section id="certifications" className="py-10 px-5 text-neutral-content">
       <div className="max-w-7xl mx-auto">
-        <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
+        {/* <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div> */}
+        <div className="divider bg-gradient-to-r from-transparent via-accent-blue/40 to-transparent h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
+
+
         <h2 className="text-neutral-content font-semibold text-center text-4xl mb-8">
           Certifications and Achievements
         </h2>
