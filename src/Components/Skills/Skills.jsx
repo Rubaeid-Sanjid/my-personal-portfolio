@@ -6,7 +6,13 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaGitAlt,
-  FaGithub,
+  FaShopify,
+  FaComments,
+  FaUsers,
+  FaBrain,
+  FaShieldAlt,
+  FaSyncAlt,
+  FaLanguage,
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -19,6 +25,8 @@ import {
   SiJavascript,
   SiFirebase,
   SiJsonwebtokens,
+  SiNextdotjs,
+  SiReactrouter,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import Marquee from "react-fast-marquee";
@@ -29,20 +37,36 @@ const Skills = () => {
 
   const skillCategories = [
     { id: "all", name: "All Technologies" },
-    { id: "frontend", name: "Frontend" },
+    { id: "frontend", name: "Frontend & CMS" },
     { id: "backend", name: "Backend & APIs" },
     { id: "tools", name: "Database & Tools" },
   ];
 
   const allSkills = [
-    // Frontend
+    // Frontend & CMS
     {
       name: "React.js",
       category: "frontend",
       icon: FaReact,
       color: "#61DAFB",
       level: "Advanced",
-      desc: "Hooks, Router, Context, State",
+      desc: "Hooks, Context, State & Component Architecture",
+    },
+    {
+      name: "Shopify (CMS)",
+      category: "frontend",
+      icon: FaShopify,
+      color: "#96BF48",
+      level: "Proficient",
+      desc: "E-Commerce, Storefront Customization & CMS",
+    },
+    {
+      name: "Next.js",
+      category: "frontend",
+      icon: SiNextdotjs,
+      color: "#FFFFFF",
+      level: "Proficient",
+      desc: "SSR, Modern Full-Stack & App Router",
     },
     {
       name: "JavaScript (ES6+)",
@@ -50,7 +74,7 @@ const Skills = () => {
       icon: SiJavascript,
       color: "#F7DF1E",
       level: "Advanced",
-      desc: "Async/Await, DOM, Modern JS",
+      desc: "Async/Await, DOM Manipulation, Modern JS",
     },
     {
       name: "Tailwind CSS",
@@ -58,7 +82,15 @@ const Skills = () => {
       icon: SiTailwindcss,
       color: "#38BDF8",
       level: "Advanced",
-      desc: "Responsive, Modern UI, Custom Theme",
+      desc: "Responsive Systems, Glassmorphism, Theme Design",
+    },
+    {
+      name: "React Router",
+      category: "frontend",
+      icon: SiReactrouter,
+      color: "#CA4245",
+      level: "Advanced",
+      desc: "Dynamic Routing, Loaders & Protected Routes",
     },
     {
       name: "HTML5",
@@ -66,7 +98,7 @@ const Skills = () => {
       icon: FaHtml5,
       color: "#E34F26",
       level: "Advanced",
-      desc: "Semantic Markup, Accessibility",
+      desc: "Semantic Layouts, SEO & Accessibility (a11y)",
     },
     {
       name: "CSS3",
@@ -74,7 +106,7 @@ const Skills = () => {
       icon: FaCss3Alt,
       color: "#1572B6",
       level: "Advanced",
-      desc: "Flexbox, Grid, Animations",
+      desc: "Flexbox, CSS Grid, Transitions & Animations",
     },
     {
       name: "Framer Motion",
@@ -82,7 +114,7 @@ const Skills = () => {
       icon: TbBrandFramerMotion,
       color: "#EA4C89",
       level: "Proficient",
-      desc: "Gestures, Scroll & Entrance Motion",
+      desc: "Fluid Micro-interactions & Scroll Animation",
     },
 
     // Backend
@@ -92,7 +124,7 @@ const Skills = () => {
       icon: FaNode,
       color: "#68A063",
       level: "Proficient",
-      desc: "Event Loop, REST APIs, NPM",
+      desc: "Server Runtime, Asynchronous Workflows, NPM",
     },
     {
       name: "Express.js",
@@ -100,7 +132,7 @@ const Skills = () => {
       icon: SiExpress,
       color: "#FFFFFF",
       level: "Proficient",
-      desc: "Routing, Middleware, Controllers",
+      desc: "REST APIs, Custom Middleware, Controllers",
     },
     {
       name: "Firebase",
@@ -108,7 +140,7 @@ const Skills = () => {
       icon: SiFirebase,
       color: "#FFCA28",
       level: "Proficient",
-      desc: "Auth, Firestore, Hosting",
+      desc: "Authentication, Firestore, Storage & Hosting",
     },
     {
       name: "JWT Authentication",
@@ -116,7 +148,7 @@ const Skills = () => {
       icon: SiJsonwebtokens,
       color: "#D63AFF",
       level: "Proficient",
-      desc: "Secure Token Auth & Verification",
+      desc: "Secure Token Generation & Route Protection",
     },
 
     // Database & Tools
@@ -126,7 +158,7 @@ const Skills = () => {
       icon: SiMongodb,
       color: "#47A248",
       level: "Proficient",
-      desc: "Aggregation, Mongoose, Atlas",
+      desc: "NoSQL Schemas, Aggregation, Mongoose ORM",
     },
     {
       name: "MySQL",
@@ -134,7 +166,7 @@ const Skills = () => {
       icon: SiMysql,
       color: "#00758F",
       level: "Proficient",
-      desc: "Relational Queries, Joins, Schemas",
+      desc: "Relational Queries, Joins & Normalized Schemas",
     },
     {
       name: "Git & GitHub",
@@ -142,7 +174,7 @@ const Skills = () => {
       icon: FaGitAlt,
       color: "#F05032",
       level: "Advanced",
-      desc: "Version Control, Branching, PRs",
+      desc: "Version Control, Branching, PRs & Workflows",
     },
     {
       name: "Postman",
@@ -150,7 +182,7 @@ const Skills = () => {
       icon: SiPostman,
       color: "#FF6C37",
       level: "Proficient",
-      desc: "API Testing & Documentation",
+      desc: "Endpoint Testing, Mocking & API Documentation",
     },
     {
       name: "Vite",
@@ -158,7 +190,7 @@ const Skills = () => {
       icon: SiVite,
       color: "#646CFF",
       level: "Advanced",
-      desc: "Fast Bundling & Modern Tooling",
+      desc: "Blazing Fast Dev Servers & Production Builds",
     },
     {
       name: "Vercel",
@@ -166,8 +198,22 @@ const Skills = () => {
       icon: SiVercel,
       color: "#FFFFFF",
       level: "Proficient",
-      desc: "Continuous Deployment & Hosting",
+      desc: "Automated CI/CD & Cloud Deployment",
     },
+  ];
+
+  const softSkills = [
+    { name: "Client Communication", icon: FaComments, desc: "Requirement gathering & sprint demos" },
+    { name: "Teamwork & Collaboration", icon: FaUsers, desc: "Cross-functional pair programming" },
+    { name: "Problem Solving", icon: FaBrain, desc: "Algorithmic thinking & debugging" },
+    { name: "Responsibility & Ownership", icon: FaShieldAlt, desc: "On-time delivery & quality assurance" },
+    { name: "Adaptability & Learning", icon: FaSyncAlt, desc: "Quick adoption of emerging frameworks" },
+  ];
+
+  const languages = [
+    { name: "English", level: "Professional Working Proficiency" },
+    { name: "Bangla", level: "Native / Bilingual" },
+    { name: "Hindi", level: "Conversational" },
   ];
 
   const filteredSkills =
@@ -207,7 +253,7 @@ const Skills = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-slate-400 text-base sm:text-lg"
           >
-            A curated stack of modern languages, frameworks, and developer tools I leverage daily.
+            A comprehensive toolset combining frontend excellence, Shopify CMS, backend APIs, and collaborative engineering skills.
           </motion.p>
 
           {/* Category Filter Tabs */}
@@ -289,10 +335,68 @@ const Skills = () => {
           </AnimatePresence>
         </motion.div>
 
+        {/* Interpersonal & Languages Bento Row */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-12">
+          {/* Interpersonal Skills */}
+          <div className="lg:col-span-8 glass-card rounded-3xl p-6 sm:p-8 border border-white/10">
+            <h3 className="font-heading font-bold text-xl text-white mb-2 flex items-center gap-2">
+              <span>🌟 Interpersonal & Professional Strengths</span>
+            </h3>
+            <p className="text-slate-400 text-xs sm:text-sm mb-6">
+              Core soft skills cultivated through agency teamwork and client coordination.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+              {softSkills.map((item, idx) => {
+                const SoftIcon = item.icon;
+                return (
+                  <div
+                    key={idx}
+                    className="p-3.5 rounded-2xl bg-surface-card border border-white/10 hover:border-cyan-500/30 transition-all"
+                  >
+                    <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+                      <SoftIcon className="text-base" />
+                      <span>{item.name}</span>
+                    </div>
+                    <div className="text-xs text-slate-400 mt-1">{item.desc}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Spoken Languages */}
+          <div className="lg:col-span-4 glass-card rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between">
+            <div>
+              <h3 className="font-heading font-bold text-xl text-white mb-2 flex items-center gap-2">
+                <FaLanguage className="text-cyan-400 text-2xl" />
+                <span>Languages</span>
+              </h3>
+              <p className="text-slate-400 text-xs sm:text-sm mb-6">
+                Multilingual communication for diverse teams.
+              </p>
+              <div className="space-y-3">
+                {languages.map((lang, lIdx) => (
+                  <div
+                    key={lIdx}
+                    className="flex items-center justify-between p-3 rounded-2xl bg-surface-card border border-white/10"
+                  >
+                    <span className="font-semibold text-white text-sm">
+                      {lang.name}
+                    </span>
+                    <span className="text-xs text-cyan-400 font-mono">
+                      {lang.level}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Marquee Ticker of Tech Logos */}
         <div className="mt-16 pt-10 border-t border-white/[0.06]">
           <div className="text-center text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">
-            Continuous Full-Stack Toolset
+            Continuous Full-Stack & CMS Toolset
           </div>
           <Marquee speed={40} pauseOnHover gradient={false}>
             <div className="flex items-center gap-10 py-2 px-4">
@@ -317,4 +421,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
 

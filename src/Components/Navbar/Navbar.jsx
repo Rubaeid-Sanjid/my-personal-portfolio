@@ -7,8 +7,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Education", href: "#education" },
     { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
   ];
@@ -27,7 +29,7 @@ const Navbar = () => {
                 <span className="font-mono font-bold text-lg">&lt;RS/&gt;</span>
               </div>
               <span className="hidden sm:inline-block font-heading font-extrabold text-xl text-slate-100">
-                Rubaeid <span className="text-gradient">Sanjid</span>
+                Sheikh <span className="text-gradient">Rubaeid</span>
               </span>
             </a>
 
@@ -44,7 +46,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="px-4 py-2 rounded-full text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.08] transition-all duration-200"
+                className="px-3.5 py-1.5 rounded-full text-xs xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.08] transition-all duration-200"
               >
                 {link.name}
               </a>
@@ -55,7 +57,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <a
               href={resume}
-              download="Rubaeid_Sanjid_Resume.pdf"
+              download="Sheikh_Rubaeid_Sanjid_Resume.pdf"
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:shadow-glow hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 border border-cyan-400/30"
             >
               <HiDownload className="text-lg" />
@@ -94,7 +96,7 @@ const Navbar = () => {
           <div className="pt-2">
             <a
               href={resume}
-              download="Rubaeid_Sanjid_Resume.pdf"
+              download="Sheikh_Rubaeid_Sanjid_Resume.pdf"
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-600 shadow-glow"
             >
@@ -109,4 +111,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 

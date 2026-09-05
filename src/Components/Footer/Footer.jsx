@@ -57,8 +57,10 @@ const Footer = () => {
 
   const quickNav = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Education", href: "#education" },
     { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
   ];
@@ -76,11 +78,11 @@ const Footer = () => {
               <span className="font-mono font-bold text-base">&lt;RS/&gt;</span>
             </div>
             <span>
-              Rubaeid <span className="text-gradient">Sanjid</span>
+              Sheikh Rubaeid <span className="text-gradient">Sanjid</span>
             </span>
           </a>
           <p className="text-xs sm:text-sm text-slate-400 max-w-md mx-auto">
-            Full-Stack Developer crafting clean, scalable, and delightful digital experiences.
+            Frontend Developer & CSE Graduate crafting clean, scalable, and high-performance digital products.
           </p>
         </div>
 
@@ -119,7 +121,7 @@ const Footer = () => {
         {/* Divider & Copyright */}
         <div className="w-full pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <div>
-            © {new Date().getFullYear()} Rubaeid Sanjid. All rights reserved.
+            © {new Date().getFullYear()} Sheikh Rubaeid Sanjid. All rights reserved.
           </div>
           <div className="flex items-center gap-1">
             <span>Built with React & Tailwind CSS</span>
@@ -132,4 +134,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 

@@ -1,33 +1,48 @@
 [
-    {
-      "id": 1,
-      "name": "EduScholar",
-      "description": "It is a scholarship management website. Users can apply for university scholarships and admin can manage all scholarships.",
-      "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
-      "image": "https://i.postimg.cc/prstXcd1/Edu-Scholar.png",
-      "projectLink": "https://eduscholar-434da.web.app/",
-      "repositoryLink": "https://github.com/Rubaeid-Sanjid/EduScholar-client-side",
-      "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/EduScholar-server-side"
-    },
-    {
-      "id": 2,
-      "name": "TechTALKS",
-      "description": "It is a tech related bloging website. Users can create, edit, and delete posts and add comments.",
-      "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
-      "image": "https://i.postimg.cc/V6B82kPw/Tech-Talks.png",
-      "projectLink": "https://tech-talks-auth.web.app",
-      "repositoryLink": "https://github.com/Rubaeid-Sanjid/Tech-Talks-client-side",
-      "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/Tech-Talks-server-side"
-    },
-    {
-      "id": 3,
-      "name": "Canvas Creations",
-      "description": "It is an online art gallery store. Users can add, update and delete their products to sell.",
-      "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
-      "image": "https://i.postimg.cc/j2xbTYR7/Canvas-Creations.png",
-      "projectLink": "https://art-and-craft-store-auth.web.app",
-      "repositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-client-side",
-      "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-server-side"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "ClassNet",
+    "tagline": "Virtual Classroom Management System (Team Project)",
+    "description": "A collaborative virtual classroom platform where teachers create classrooms with unique entry codes and students join to engage in discussion forums, receive assignments, submit tasks, and view instructor feedback and grading.",
+    "technologies": ["React JS", "Tailwind CSS", "Firebase", "Express JS", "Mongoose", "Node.js"],
+    "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1000&auto=format&fit=crop",
+    "projectLink": "https://rubaeid-sanjid-portfolio.netlify.app",
+    "repositoryLink": "https://github.com/Rubaeid-Sanjid",
+    "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid"
+  },
+  {
+    "id": 2,
+    "name": "EduScholar",
+    "tagline": "Scholarship Management Website",
+    "description": "Centralizes university scholarship discovery and applications. Features dynamic scholarship management, admin dashboard for role management, and streamlined student application status tracking.",
+    "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
+    "image": "https://i.postimg.cc/prstXcd1/Edu-Scholar.png",
+    "projectLink": "https://eduscholar-434da.web.app/",
+    "repositoryLink": "https://github.com/Rubaeid-Sanjid/EduScholar-client-side",
+    "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/EduScholar-server-side"
+  },
+  {
+    "id": 3,
+    "name": "TechTALKS",
+    "tagline": "Technology Blog & Community Platform",
+    "description": "A full-featured technology blogging and community platform where users create, edit, and curate tech articles, share resources, and interact through comments.",
+    "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
+    "image": "https://i.postimg.cc/V6B82kPw/Tech-Talks.png",
+    "projectLink": "https://tech-talks-auth.web.app",
+    "repositoryLink": "https://github.com/Rubaeid-Sanjid/Tech-Talks-client-side",
+    "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/Tech-Talks-server-side"
+  },
+  {
+    "id": 4,
+    "name": "Canvas Creations",
+    "tagline": "Online Art & Craft Gallery Store",
+    "description": "An interactive e-commerce and gallery platform for artisans to showcase, add, update, and manage craft items with secure authentication and real-time inventory updates.",
+    "technologies": ["React JS", "Tailwind CSS", "Firebase", "Node.js", "Express Js", "MongoDB"],
+    "image": "https://i.postimg.cc/j2xbTYR7/Canvas-Creations.png",
+    "projectLink": "https://art-and-craft-store-auth.web.app",
+    "repositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-client-side",
+    "serverRepositoryLink": "https://github.com/Rubaeid-Sanjid/Art-and-Craft-Store-server-side"
+  }
+]
+
   

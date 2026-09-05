@@ -13,10 +13,10 @@ import { HiDownload, HiSparkles } from "react-icons/hi";
 
 const Banner = () => {
   const stats = [
-    { label: "Experience", value: "1+ Year" },
-    { label: "Completed Projects", value: "10+" },
-    { label: "Core Stack", value: "MERN" },
-    { label: "Graduation", value: "AIUB CSE" },
+    { label: "Active Role", value: "Frontend Dev" },
+    { label: "Agency", value: "Softvence" },
+    { label: "CGPA (AIUB)", value: "3.60 / 4.0" },
+    { label: "Post-Grad", value: "MSc Data Science" },
   ];
 
   return (
@@ -33,7 +33,7 @@ const Banner = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-card/80 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-medium w-fit mx-auto lg:mx-0 backdrop-blur-md shadow-glow"
             >
               <HiSparkles className="text-cyan-400 text-base" />
-              <span>Full-Stack & MERN Stack Specialist</span>
+              <span>Frontend Developer @ Softvence Agency</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -46,7 +46,7 @@ const Banner = () => {
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
                 Hi, I'm{" "}
                 <span className="text-gradient inline-block">
-                  Rubaeid Sanjid
+                  Sheikh Rubaeid Sanjid
                 </span>
               </h1>
               <div className="text-2xl sm:text-3xl lg:text-4xl font-heading font-semibold text-slate-300 flex items-center justify-center lg:justify-start gap-2 h-12">
@@ -54,10 +54,10 @@ const Banner = () => {
                 <span className="text-cyan-400 font-mono underline decoration-cyan-500/40 decoration-wavy">
                   <Typewriter
                     words={[
-                      "MERN Stack Dev",
-                      "React.js Specialist",
-                      "Full-Stack Engineer",
-                      "Problem Solver",
+                      "Frontend Developer",
+                      "React.js & Next.js Specialist",
+                      "Shopify CMS Developer",
+                      "Full-Stack MERN Engineer",
                     ]}
                     loop={0}
                     cursor
@@ -78,11 +78,11 @@ const Banner = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base sm:text-lg text-slate-300/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
-              I architect dynamic, responsive, and secure web applications using{" "}
+              Computer Science graduate & Frontend Developer experienced in building responsive, production-grade web applications using{" "}
               <span className="text-white font-medium border-b border-cyan-400/40">
-                React.js, Node.js, Express, MongoDB, and Tailwind CSS
+                React.js, Next.js, Shopify (CMS), Tailwind CSS, Node.js, and MongoDB
               </span>
-              . Dedicated to clean code, seamless user experiences, and scalable solutions.
+              . Dedicated to clean UI/UX implementation, seamless client collaboration, and scalable code.
             </motion.p>
 
             {/* CTA Action Buttons */}
@@ -101,10 +101,10 @@ const Banner = () => {
               </a>
 
               <a
-                href="#contact"
+                href="#experience"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-slate-200 bg-surface-card/80 hover:bg-white/10 hover:text-white border border-white/10 hover:border-cyan-500/40 transition-all duration-300 backdrop-blur-md"
               >
-                <span>Let's Talk</span>
+                <span>View Experience</span>
               </a>
 
               <a
@@ -184,7 +184,7 @@ const Banner = () => {
               <div className="relative rounded-2xl overflow-hidden bg-surface-card border border-white/10 p-2 shadow-2xl max-w-xs sm:max-w-sm">
                 <img
                   src={profileImg}
-                  alt="Rubaeid Sanjid - MERN Stack Developer"
+                  alt="Sheikh Rubaeid Sanjid - Frontend & Full-Stack Developer"
                   className="w-full h-auto object-cover rounded-xl grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                 />
 
@@ -192,10 +192,10 @@ const Banner = () => {
                 <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/80 backdrop-blur-md border border-white/10 flex items-center justify-between">
                   <div>
                     <h4 className="text-sm font-semibold text-white">
-                      Rubaeid Sanjid
+                      Sheikh Rubaeid Sanjid
                     </h4>
                     <p className="text-xs text-cyan-400 font-mono">
-                      Full-Stack Engineer
+                      Frontend Dev @ Softvence
                     </p>
                   </div>
                   <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-medium">
@@ -212,8 +212,8 @@ const Banner = () => {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -top-4 -left-6 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/90 border border-cyan-500/30 shadow-glow backdrop-blur-md"
               >
-                <span className="text-xl">⚛️</span>
-                <span className="text-xs font-semibold text-white">React.js Pro</span>
+                <span className="text-xl">🛍️</span>
+                <span className="text-xs font-semibold text-white">Shopify & CMS</span>
               </motion.div>
 
               {/* Floating Tech Badge 2 */}
@@ -223,8 +223,8 @@ const Banner = () => {
                 transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -bottom-4 -right-4 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/90 border border-indigo-500/30 shadow-glow backdrop-blur-md"
               >
-                <span className="text-xl">🚀</span>
-                <span className="text-xs font-semibold text-white">MERN Specialist</span>
+                <span className="text-xl">⚛️</span>
+                <span className="text-xs font-semibold text-white">React & Next.js</span>
               </motion.div>
             </motion.div>
           </div>
@@ -242,7 +242,7 @@ const Banner = () => {
               key={index}
               className="p-4 rounded-2xl bg-surface-card/40 border border-white/[0.05] backdrop-blur-md text-center hover:border-cyan-500/30 transition-all duration-300"
             >
-              <div className="font-heading font-extrabold text-2xl sm:text-3xl text-gradient">
+              <div className="font-heading font-extrabold text-xl sm:text-2xl text-gradient">
                 {stat.value}
               </div>
               <div className="text-xs sm:text-sm font-medium text-slate-400 mt-1">
@@ -257,4 +257,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
 

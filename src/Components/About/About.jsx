@@ -7,6 +7,7 @@ import {
   FaPlane,
   FaExternalLinkAlt,
   FaArrowRight,
+  FaAward,
 } from "react-icons/fa";
 import { HiSparkles } from "react-icons/hi";
 
@@ -34,7 +35,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight"
           >
-            Architecting Tomorrow's <span className="text-gradient">Web Solutions</span>
+            Engineering Rigor & <span className="text-gradient">Modern Web Craft</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -43,7 +44,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-slate-400 text-base sm:text-lg"
           >
-            A blend of engineering rigor, modern full-stack development, and an obsession with detail.
+            A look into my background, agency experience, academic foundation, and technical philosophy.
           </motion.p>
         </div>
 
@@ -62,18 +63,18 @@ const About = () => {
                 <FaCode className="text-xl" />
               </div>
               <h3 className="font-heading font-bold text-2xl text-white mb-4">
-                Full-Stack Developer & Problem Solver
+                Frontend Developer & Computer Science Graduate
               </h3>
               <p className="text-slate-300 leading-relaxed text-base mb-4">
-                Hello! I'm <span className="text-white font-semibold">Rubaeid Sanjid</span>, a dedicated web developer with hands-on experience in engineering production-ready, dynamic web applications.
+                Hello! I'm <span className="text-white font-semibold">Sheikh Rubaeid Sanjid</span>, an energetic frontend engineer with practical agency experience developing production-grade web applications and Shopify digital storefronts at <span className="text-cyan-400 font-semibold">Softvence Agency</span>.
               </p>
               <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
-                My mission is to craft intuitive, accessible, and high-performance applications that deliver exceptional user value. I bridge the gap between frontend elegance and resilient backend architecture.
+                Passionate about frontend architectures, clean UI/UX implementation, and continuous learning. I specialize in turning complex specifications into seamless, accessible, and high-performance digital products.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2 mt-6 pt-6 border-t border-white/[0.06]">
-              {["Full-Stack Architecture", "Responsive Design", "API Integration", "Clean Code"].map(
+              {["Frontend Architecture", "Shopify CMS", "React.js & Next.js", "REST APIs", "Clean UI/UX"].map(
                 (tag, index) => (
                   <span
                     key={index}
@@ -101,9 +102,14 @@ const About = () => {
               <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-6">
                 <FaGraduationCap className="text-2xl" />
               </div>
-              <span className="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold uppercase tracking-wider">
-                Academic Degree
-              </span>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold uppercase tracking-wider">
+                  CGPA: 3.60 / 4.00
+                </span>
+                <span className="px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-semibold">
+                  MSc Data Science (In Progress)
+                </span>
+              </div>
               <h3 className="font-heading font-bold text-xl sm:text-2xl text-white mt-3 mb-2">
                 BSc in Computer Science & Engineering
               </h3>
@@ -117,14 +123,16 @@ const About = () => {
                 <FaExternalLinkAlt className="text-xs" />
               </a>
               <p className="text-slate-400 text-sm mt-4 leading-relaxed">
-                Completed comprehensive coursework in algorithms, data structures, database systems, software engineering, and object-oriented programming.
+                Graduated with distinction and Dean's Award honor. Strong foundation in Algorithms, Data Structures, Software Engineering, and Database Systems.
               </p>
             </div>
 
             <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between">
-              <span className="text-xs text-slate-500">Graduated Engineer</span>
+              <span className="text-xs text-amber-400 flex items-center gap-1 font-semibold">
+                <FaAward /> Dean's Award Honor
+              </span>
               <span className="text-xs font-semibold px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">
-                AIUB Alumnus
+                Graduated Jan 2026
               </span>
             </div>
           </motion.div>
@@ -144,24 +152,24 @@ const About = () => {
               Engineering Mindset & Standards
             </h3>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-              I emphasize writing modular, clean, and maintainable code with strict attention to performance, security, and state management.
+              I emphasize writing modular, clean, and maintainable code with strict attention to performance, client satisfaction, and responsive UX design.
             </p>
             <div className="grid grid-cols-2 gap-3 pt-2">
               <div className="p-3 rounded-xl bg-surface-card/60 border border-white/[0.06]">
-                <div className="font-semibold text-white text-sm">MERN Stack</div>
-                <div className="text-xs text-slate-400 mt-0.5">End-to-end JavaScript</div>
+                <div className="font-semibold text-white text-sm">Frontend & CMS</div>
+                <div className="text-xs text-slate-400 mt-0.5">React, Next.js & Shopify</div>
               </div>
               <div className="p-3 rounded-xl bg-surface-card/60 border border-white/[0.06]">
-                <div className="font-semibold text-white text-sm">Modern UI/UX</div>
-                <div className="text-xs text-slate-400 mt-0.5">Fluid responsive design</div>
+                <div className="font-semibold text-white text-sm">Full-Stack MERN</div>
+                <div className="text-xs text-slate-400 mt-0.5">Express, Node & MongoDB</div>
               </div>
               <div className="p-3 rounded-xl bg-surface-card/60 border border-white/[0.06]">
-                <div className="font-semibold text-white text-sm">RESTful APIs</div>
-                <div className="text-xs text-slate-400 mt-0.5">Secure authentication & CRUD</div>
+                <div className="font-semibold text-white text-sm">Client Coordination</div>
+                <div className="text-xs text-slate-400 mt-0.5">Requirement sprint delivery</div>
               </div>
               <div className="p-3 rounded-xl bg-surface-card/60 border border-white/[0.06]">
-                <div className="font-semibold text-white text-sm">Agile Learner</div>
-                <div className="text-xs text-slate-400 mt-0.5">Rapid tech adoption</div>
+                <div className="font-semibold text-white text-sm">Data Science</div>
+                <div className="text-xs text-slate-400 mt-0.5">Analytics & ML Foundations</div>
               </div>
             </div>
           </motion.div>
@@ -187,17 +195,17 @@ const About = () => {
                 Beyond the Terminal
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                When I'm not writing code or experimenting with new libraries, I love exploring new travel destinations, enjoying time with family and friends, and engaging in strategic gaming. These recharge my creativity and keep my problem-solving instincts sharp.
+                When I'm not developing apps or experimenting with new libraries, I love exploring travel destinations, spending quality time with friends & family, and playing tactical games. These keep my mind creative and energized.
               </p>
             </div>
 
             <div className="flex items-center justify-between mt-6 pt-4 border-t border-white/[0.06]">
-              <span className="text-xs text-slate-400">Ready to build together?</span>
+              <span className="text-xs text-slate-400">Interested in working together?</span>
               <a
-                href="#contact"
+                href="#experience"
                 className="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
               >
-                <span>Get In Touch</span>
+                <span>View Career Experience</span>
                 <FaArrowRight />
               </a>
             </div>
@@ -208,4 +216,5 @@ const About = () => {
   );
 };
 
-export default About;
+export default About;
+
