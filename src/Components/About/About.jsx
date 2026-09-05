@@ -1,64 +1,211 @@
 import { motion } from "framer-motion";
+import {
+  FaGraduationCap,
+  FaCode,
+  FaLightbulb,
+  FaGamepad,
+  FaPlane,
+  FaExternalLinkAlt,
+  FaArrowRight,
+} from "react-icons/fa";
+import { HiSparkles } from "react-icons/hi";
 
 const About = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2 }}
-      id="about"
-      className="container mx-auto px-3 lg:px-12 text-neutral-content"
-    >
-      {/* <div className="divider bg-neutral-content h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div> */}
-      <div className="divider bg-gradient-to-r from-transparent via-accent-blue/40 to-transparent h-[1px] lg:w-1/2 w-3/4 mx-auto my-12"></div>
-      <h2 className="text-4xl font-semibold mb-10 text-center">About Me</h2>
+    <section id="about" className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4"
+          >
+            <HiSparkles className="text-sm" />
+            <span>Get to Know Me</span>
+          </motion.div>
 
-      <p className="text-lg mb-4">
-        Hello, I'm <span className="font-bold">Rubaeid Sanjid</span>, a
-        passionate web developer with over 1 year of experience in
-        building dynamic and responsive websites.
-      </p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight"
+          >
+            Architecting Tomorrow's <span className="text-gradient">Web Solutions</span>
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-4 text-slate-400 text-base sm:text-lg"
+          >
+            A blend of engineering rigor, modern full-stack development, and an obsession with detail.
+          </motion.p>
+        </div>
 
-      <p className="text-lg mb-4">
-        I graduated with a degree in Computer Science and Engineering from{" "}
-        <a href="https://www.aiub.edu/" className="font-bold">
-          American International University-Bangladesh (AIUB).
-        </a>
-      </p>
+        {/* Bento Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-6">
+          {/* Card 1: Main Story & Background (Span 7) */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="lg:col-span-7 glass-card glass-card-hover rounded-3xl p-6 sm:p-8 flex flex-col justify-between"
+          >
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6">
+                <FaCode className="text-xl" />
+              </div>
+              <h3 className="font-heading font-bold text-2xl text-white mb-4">
+                Full-Stack Developer & Problem Solver
+              </h3>
+              <p className="text-slate-300 leading-relaxed text-base mb-4">
+                Hello! I'm <span className="text-white font-semibold">Rubaeid Sanjid</span>, a dedicated web developer with hands-on experience in engineering production-ready, dynamic web applications.
+              </p>
+              <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
+                My mission is to craft intuitive, accessible, and high-performance applications that deliver exceptional user value. I bridge the gap between frontend elegance and resilient backend architecture.
+              </p>
+            </div>
 
-      <p className="text-lg mb-4">
-        In addition to my studies, I am constantly exploring new technologies.
-        I'm particularly interested in MERN stack development and Full-stack
-        development.
-      </p>
+            <div className="flex flex-wrap gap-2 mt-6 pt-6 border-t border-white/[0.06]">
+              {["Full-Stack Architecture", "Responsive Design", "API Integration", "Clean Code"].map(
+                (tag, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 rounded-lg bg-surface-card border border-white/10 text-xs font-medium text-slate-300"
+                  >
+                    {tag}
+                  </span>
+                )
+              )}
+            </div>
+          </motion.div>
 
-      <p className="text-lg mb-4">
-        Outside of my personal work, I enjoy traveling, spending time with friends and family, and playing games. These hobbies help me stay creative and
-        energized.
-      </p>
+          {/* Card 2: Academic Background & University (Span 5) */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="lg:col-span-5 glass-card glass-card-hover rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group"
+          >
+            {/* Background subtle glow */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all duration-500 pointer-events-none" />
 
-      <p className="text-lg mb-4">
-        My mission is to create user-friendly, accessible, and visually
-        appealing web applications that make a positive impact on user's lives.
-      </p>
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-6">
+                <FaGraduationCap className="text-2xl" />
+              </div>
+              <span className="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold uppercase tracking-wider">
+                Academic Degree
+              </span>
+              <h3 className="font-heading font-bold text-xl sm:text-2xl text-white mt-3 mb-2">
+                BSc in Computer Science & Engineering
+              </h3>
+              <a
+                href="https://www.aiub.edu/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 text-cyan-400 hover:text-cyan-300 font-medium text-sm transition-colors"
+              >
+                <span>American International University-Bangladesh (AIUB)</span>
+                <FaExternalLinkAlt className="text-xs" />
+              </a>
+              <p className="text-slate-400 text-sm mt-4 leading-relaxed">
+                Completed comprehensive coursework in algorithms, data structures, database systems, software engineering, and object-oriented programming.
+              </p>
+            </div>
 
-      <p className="text-lg">
-        Feel free to{" "}
-        <a href="#contact" className="text-blue-500 font-bold">
-          contact me
-        </a>{" "}
-        or connect with me on{" "}
-        <a
-          href="https://www.linkedin.com/in/rubaeid-sanjid/"
-          target="_blank"
-          className="text-blue-500 font-bold"
-        >
-          LinkedIn
-        </a>
-        !
-      </p>
-    </motion.div>
+            <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between">
+              <span className="text-xs text-slate-500">Graduated Engineer</span>
+              <span className="text-xs font-semibold px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">
+                AIUB Alumnus
+              </span>
+            </div>
+          </motion.div>
+
+          {/* Card 3: Philosophy & Technical Focus (Span 6) */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="lg:col-span-6 glass-card glass-card-hover rounded-3xl p-6 sm:p-8"
+          >
+            <div className="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6">
+              <FaLightbulb className="text-xl" />
+            </div>
+            <h3 className="font-heading font-bold text-xl sm:text-2xl text-white mb-3">
+              Engineering Mindset & Standards
+            </h3>
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+              I emphasize writing modular, clean, and maintainable code with strict attention to performance, security, and state management.
+            </p>
+            <div className="grid grid-cols-2 gap-3 pt-2">
+              <div className="p-3 rounded-xl bg-surface-card/60 border border-white/[0.06]">
+                <div className="font-semibold text-white text-sm">MERN Stack</div>
+                <div className="text-xs text-slate-400 mt-0.5">End-to-end JavaScript</div>
+              </div>
+              <div className="p-3 rounded-xl bg-surface-card/60 border border-white/[0.06]">
+                <div className="font-semibold text-white text-sm">Modern UI/UX</div>
+                <div className="text-xs text-slate-400 mt-0.5">Fluid responsive design</div>
+              </div>
+              <div className="p-3 rounded-xl bg-surface-card/60 border border-white/[0.06]">
+                <div className="font-semibold text-white text-sm">RESTful APIs</div>
+                <div className="text-xs text-slate-400 mt-0.5">Secure authentication & CRUD</div>
+              </div>
+              <div className="p-3 rounded-xl bg-surface-card/60 border border-white/[0.06]">
+                <div className="font-semibold text-white text-sm">Agile Learner</div>
+                <div className="text-xs text-slate-400 mt-0.5">Rapid tech adoption</div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Card 4: Beyond Code & Hobbies (Span 6) */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="lg:col-span-6 glass-card glass-card-hover rounded-3xl p-6 sm:p-8 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                  <FaPlane className="text-xl" />
+                </div>
+                <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                  <FaGamepad className="text-xl" />
+                </div>
+              </div>
+              <h3 className="font-heading font-bold text-xl sm:text-2xl text-white mb-3">
+                Beyond the Terminal
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                When I'm not writing code or experimenting with new libraries, I love exploring new travel destinations, enjoying time with family and friends, and engaging in strategic gaming. These recharge my creativity and keep my problem-solving instincts sharp.
+              </p>
+            </div>
+
+            <div className="flex items-center justify-between mt-6 pt-4 border-t border-white/[0.06]">
+              <span className="text-xs text-slate-400">Ready to build together?</span>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
+              >
+                <span>Get In Touch</span>
+                <FaArrowRight />
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default About;
+export default About;
