@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FaBriefcase, FaCheckCircle, FaShopify, FaReact } from "react-icons/fa";
+import { FaBriefcase, FaCheckCircle, FaShopify, FaReact, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaDroplet } from "react-icons/fa6";
 import { HiSparkles } from "react-icons/hi";
 import { SiTailwindcss } from "react-icons/si";
 
@@ -7,12 +8,12 @@ const Experience = () => {
   const experiences = [
     {
       role: "Frontend Developer",
-      company: "Softvence Agency",
+      company: "Softvence IT",
       location: "Dhaka, Bangladesh",
       period: "2 August 2025 – Present",
       isCurrent: true,
       description:
-        "Leading frontend development and client-facing digital storefronts, specializing in Shopify (CMS) and React ecosystem applications with a focus on high-converting UI/UX.",
+        "Leading frontend development and client-facing digital storefronts, specializing in Shopify (CMS) with a focus on high-converting UI/UX.",
       responsibilities: [
         "Developing and maintaining high-performance, responsive web applications and e-commerce stores using Shopify (CMS).",
         "Collaborating with cross-functional design and engineering teams to implement modern, clean UI/UX designs and frontend functionalities.",
@@ -21,8 +22,10 @@ const Experience = () => {
       ],
       skills: [
         { name: "Shopify (CMS)", icon: FaShopify, color: "#96BF48" },
-        { name: "React.js", icon: FaReact, color: "#61DAFB" },
-        { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8" },
+        // { name: "React.js", icon: FaReact, color: "#61DAFB" },
+        { name: "HTML5", icon: FaHtml5, color: "#E34F26" },
+        { name: "CSS3", icon: FaCss3, color: "#1572B6" },
+        { name: "Liquid", icon: FaDroplet, color: "#38BDF8" },
       ],
     },
   ];

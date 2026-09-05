@@ -14,8 +14,8 @@ import { HiDownload, HiSparkles } from "react-icons/hi";
 const Banner = () => {
   const stats = [
     { label: "Active Role", value: "Frontend Dev" },
-    { label: "Agency", value: "Softvence" },
-    { label: "CGPA (AIUB)", value: "3.60 / 4.0" },
+    { label: "Company", value: "Softvence IT" },
+    // { label: "CGPA (AIUB)", value: "3.60 / 4.0" },
     { label: "Post-Grad", value: "MSc Data Science" },
   ];
 
@@ -33,7 +33,7 @@ const Banner = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-card/80 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-medium w-fit mx-auto lg:mx-0 backdrop-blur-md shadow-glow"
             >
               <HiSparkles className="text-cyan-400 text-base" />
-              <span>Frontend Developer @ Softvence Agency</span>
+              <span>Frontend Developer @ Softvence IT</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -55,9 +55,9 @@ const Banner = () => {
                   <Typewriter
                     words={[
                       "Frontend Developer",
-                      "React.js & Next.js Specialist",
+                      "React.js Specialist",
                       "Shopify CMS Developer",
-                      "Full-Stack MERN Engineer",
+                      "MERN Stack Developer",
                     ]}
                     loop={0}
                     cursor
@@ -129,15 +129,6 @@ const Banner = () => {
               </span>
               <div className="flex gap-3">
                 <a
-                  href="https://github.com/Rubaeid-Sanjid"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="p-2.5 rounded-lg bg-surface-card/60 hover:bg-cyan-500/20 hover:text-cyan-400 border border-white/[0.06] hover:border-cyan-500/30 transition-all"
-                  aria-label="GitHub Profile"
-                >
-                  <FaGithub className="text-lg" />
-                </a>
-                <a
                   href="https://www.linkedin.com/in/rubaeid-sanjid/"
                   target="_blank"
                   rel="noreferrer"
@@ -145,6 +136,15 @@ const Banner = () => {
                   aria-label="LinkedIn Profile"
                 >
                   <FaLinkedin className="text-lg" />
+                </a>
+                <a
+                  href="https://github.com/Rubaeid-Sanjid"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="p-2.5 rounded-lg bg-surface-card/60 hover:bg-cyan-500/20 hover:text-cyan-400 border border-white/[0.06] hover:border-cyan-500/30 transition-all"
+                  aria-label="GitHub Profile"
+                >
+                  <FaGithub className="text-lg" />
                 </a>
                 <a
                   href="mailto:rubaeid.sanjid@gmail.com"
@@ -212,8 +212,8 @@ const Banner = () => {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -top-4 -left-6 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/90 border border-cyan-500/30 shadow-glow backdrop-blur-md"
               >
-                <span className="text-xl">🛍️</span>
-                <span className="text-xs font-semibold text-white">Shopify & CMS</span>
+                <span className="text-xl">⚛️</span>
+                <span className="text-xs font-semibold text-white">React & Next.js</span>
               </motion.div>
 
               {/* Floating Tech Badge 2 */}
@@ -223,8 +223,8 @@ const Banner = () => {
                 transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -bottom-4 -right-4 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/90 border border-indigo-500/30 shadow-glow backdrop-blur-md"
               >
-                <span className="text-xl">⚛️</span>
-                <span className="text-xs font-semibold text-white">React & Next.js</span>
+                <span className="text-xl">🛍️</span>
+                <span className="text-xs font-semibold text-white">Shopify (CMS)</span>
               </motion.div>
             </motion.div>
           </div>

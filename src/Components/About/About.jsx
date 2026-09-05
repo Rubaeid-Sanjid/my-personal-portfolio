@@ -16,7 +16,7 @@ const About = () => {
     <section id="about" className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ const About = () => {
                 Frontend Developer & Computer Science Graduate
               </h3>
               <p className="text-slate-300 leading-relaxed text-base mb-4">
-                Hello! I'm <span className="text-white font-semibold">Sheikh Rubaeid Sanjid</span>, an energetic frontend engineer with practical agency experience developing production-grade web applications and Shopify digital storefronts at <span className="text-cyan-400 font-semibold">Softvence Agency</span>.
+                Hello! I'm <span className="text-white font-semibold">Sheikh Rubaeid Sanjid</span>, an energetic frontend engineer with practical agency experience developing production-grade web applications and Shopify digital storefronts at <span className="text-cyan-400 font-semibold">Softvence IT</span>.
               </p>
               <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
                 Passionate about frontend architectures, clean UI/UX implementation, and continuous learning. I specialize in turning complex specifications into seamless, accessible, and high-performance digital products.
@@ -217,4 +217,4 @@ const About = () => {
 };
 
 export default About;
-
+
