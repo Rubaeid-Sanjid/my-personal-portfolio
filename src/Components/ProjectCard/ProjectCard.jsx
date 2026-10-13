@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt, FaGithub, FaServer, FaShopify, FaEye } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaServer, FaShopify, FaEye, FaBriefcase, FaShieldAlt } from "react-icons/fa";
 
 const ProjectCard = ({ project, onPreview }) => {
   const isShopify = project.category === "shopify" || project.technologies?.includes("Shopify") || project.technologies?.includes("Shopify OS 2.0");
@@ -73,14 +73,20 @@ const ProjectCard = ({ project, onPreview }) => {
             </div>
           )}
 
-          {/* Niche Badge for Shopify */}
-          {project.niche && (
-            <div className="absolute top-3 left-3">
+          {/* Badges on Thumbnail */}
+          <div className="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
+            {project.niche ? (
               <span className="px-2.5 py-1 rounded-lg text-[11px] font-medium bg-slate-950/80 border border-white/15 text-cyan-300 backdrop-blur-md">
                 {project.niche}
               </span>
-            </div>
-          )}
+            ) : <span />}
+            {isShopify && (
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[10px] font-semibold bg-slate-950/85 border border-[#96BF48]/40 text-slate-200 backdrop-blur-md shadow-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#96BF48] inline-block" />
+                <span>{project.agency || "Softvence IT"}</span>
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Card Body */}
@@ -95,6 +101,16 @@ const ProjectCard = ({ project, onPreview }) => {
             <p className="text-xs text-cyan-400/90 font-medium mt-1 truncate">
               {project.tagline}
             </p>
+          )}
+
+          {/* Agency Affiliation Pill */}
+          {isShopify && (
+            <div className="flex items-center gap-2 mt-2">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-white/[0.04] border border-white/[0.08] text-[11px] font-mono text-slate-300">
+                <FaBriefcase className="text-[#96BF48] text-xs shrink-0" />
+                <span>Client Storefront &middot; <strong className="text-white font-medium">{project.agency || "Softvence IT"}</strong></span>
+              </span>
+            </div>
           )}
 
           <p className="text-slate-300 text-sm mt-2.5 leading-relaxed line-clamp-3">
@@ -118,6 +134,19 @@ const ProjectCard = ({ project, onPreview }) => {
           </div>
         </div>
       </div>
+
+      {/* Client / Agency Attribution Bar (Copyright Protection) */}
+      {isShopify && (
+        <div className="px-6 py-2.5 bg-slate-950/60 border-t border-white/[0.06] flex items-center justify-between text-[11px]">
+          <div className="flex items-center gap-1.5 text-slate-300">
+            <FaShieldAlt className="text-cyan-400 text-xs shrink-0" />
+            <span>Developed at <strong className="text-white font-medium">{project.agency || "Softvence IT"}</strong></span>
+          </div>
+          <span className="text-[10px] text-[#96BF48] font-mono font-medium bg-[#96BF48]/10 px-2 py-0.5 rounded border border-[#96BF48]/20">
+            Client Work
+          </span>
+        </div>
+      )}
 
       {/* Card Actions Footer */}
       <div className="p-6 pt-0 mt-4 flex flex-wrap items-center gap-2.5">
@@ -145,7 +174,7 @@ const ProjectCard = ({ project, onPreview }) => {
               </a>
             ) : (
               <span className="flex-1 inline-flex items-center justify-center px-3 py-2.5 rounded-xl text-[11px] font-mono text-slate-400 bg-surface-card border border-white/5">
-                Softvence IT &middot; Client
+                {project.agency || "Softvence IT"} &middot; Client
               </span>
             )}
           </>
@@ -208,6 +237,7 @@ ProjectCard.propTypes = {
     projectLink: PropTypes.string,
     repositoryLink: PropTypes.string,
     serverRepositoryLink: PropTypes.string,
+    agency: PropTypes.string,
   }),
   onPreview: PropTypes.func,
 };

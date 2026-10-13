@@ -5,6 +5,8 @@ import antiReformImg from "../assets/images/shopify UI/anti-reform.png";
 import hlstoreImg from "../assets/images/shopify UI/hlstore-ae.png";
 import necknineImg from "../assets/images/shopify UI/necknine.png";
 import pineValleyImg from "../assets/images/shopify UI/pinevalleyshades.png";
+import beyondMythImg from "../assets/images/shopify UI/beyondmyth-co.png";
+import logobollarImg from "../assets/images/shopify UI/Logobollar.nu.png";
 
 export const shopifyProjects = [
   {
@@ -154,4 +156,47 @@ export const shopifyProjects = [
     agency: "Softvence IT",
     metrics: "Nordic E-Commerce Design",
   },
+  {
+    id: 108,
+    name: "Beyond Myth",
+    category: "shopify",
+    niche: "Luxury Streetwear & Apparel",
+    tagline: "More Than Clothes — Single Design, Bigger Mindset",
+    description:
+      "A high-end luxury streetwear Shopify storefront built for Beyond Myth. Features signature oversized tee showcase with interactive size selector, clean-front vs. bold-back editorial storytelling, 'In The Wild' brutalist lifestyle gallery, and trust guarantee badges.",
+    technologies: ["Shopify OS 2.0", "Liquid", "Tailwind CSS", "JavaScript", "CRO Design"],
+    image: beyondMythImg,
+    projectLink: "https://beyondmyth.co",
+    liveUrl: "https://beyondmyth.co",
+    highlights: [
+      "Signature PDP Buy-Box with Interactive Size (S-XL) & Quantity Swatches",
+      "Clean Front vs. Bold Back Angle Storytelling Breakdown",
+      "'In The Wild' Urban Lifestyle Gallery & 5-Star Customer Testimonials",
+      "Minimalist Dark Mode UI with FAQ Dropdowns & Newsletter Integration",
+    ],
+    agency: "Softvence IT",
+    metrics: "High-Ticket Fashion CRO",
+  },
+  {
+    id: 109,
+    name: "Logobollar.nu",
+    category: "shopify",
+    niche: "Corporate Golf Gear & B2B Merch",
+    tagline: "Golfprodukter med er logotyp — Nordic B2B Storefront",
+    description:
+      "A premier Scandinavian B2B e-commerce platform for custom logo-printed golf balls, apparel, and corporate tournament gear (operated by Kalmar Profil Gross AB). Built with multi-brand filtering (Titleist, Callaway, Bridgestone), Swedish Krona (SEK) pricing, and bulk quotation inquiry flow.",
+    technologies: ["Shopify OS 2.0", "Liquid", "Tailwind CSS", "JavaScript", "B2B Wholesale"],
+    image: logobollarImg,
+    projectLink: "https://logobollar.nu",
+    liveUrl: "https://logobollar.nu",
+    highlights: [
+      "Multi-Brand Corporate Filter (Titleist, Callaway, Wilson, Bridgestone)",
+      "Category Matrix (Golf Balls, Apparel, Caps, Headcovers with Logo)",
+      "Custom Logo Print Inquiry & Bulk Corporate Order Workflow",
+      "Scandinavian Localization (Swedish Language & SEK Currency Support)",
+    ],
+    agency: "Softvence IT",
+    metrics: "20+ Years Heritage B2B UX",
+  },
 ];
+

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaExternalLinkAlt, FaTimes, FaShopify, FaCheckCircle, FaLock } from "react-icons/fa";
+import { FaExternalLinkAlt, FaTimes, FaShopify, FaCheckCircle, FaLock, FaShieldAlt } from "react-icons/fa";
 import { HiSparkles } from "react-icons/hi";
 
 const HomepagePreviewModal = ({ project, isOpen, onClose }) => {
@@ -100,7 +100,7 @@ const HomepagePreviewModal = ({ project, isOpen, onClose }) => {
                     </span>
                   )}
                   {project.agency && (
-                    <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-white/5 border border-white/10 text-slate-400">
+                    <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-[#96BF48]/15 border border-[#96BF48]/30 text-[#96BF48] font-medium">
                       Client @ {project.agency}
                     </span>
                   )}
@@ -155,31 +155,41 @@ const HomepagePreviewModal = ({ project, isOpen, onClose }) => {
                     ))}
                   </div>
                 </div>
+
+                {/* Copyright & Agency Notice */}
+                <div className="p-3.5 rounded-2xl bg-slate-950/70 border border-white/10 text-[11px] text-slate-400 flex items-start gap-2.5">
+                  <FaShieldAlt className="text-cyan-400 text-sm shrink-0 mt-0.5" />
+                  <p className="leading-relaxed">
+                    Client storefront developed by <strong className="text-white font-medium">Rubaeid Sanjid</strong> at <strong className="text-[#96BF48] font-semibold">{project.agency || "Softvence IT"}</strong>. All trademarks, logos, and brand assets belong to their respective copyright holders.
+                  </p>
+                </div>
               </div>
 
               {/* Action Footer */}
-              <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center gap-3">
-                {project.projectLink ? (
-                  <a
-                    href={project.projectLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-glow transition-all duration-300 border border-cyan-400/30"
+              <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div className="text-[11px] text-slate-400 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[#96BF48]" />
+                  <span>Agency: <strong className="text-white">{project.agency || "Softvence IT"}</strong></span>
+                </div>
+                <div className="flex items-center gap-2.5 w-full sm:w-auto">
+                  {project.projectLink && (
+                    <a
+                      href={project.projectLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-glow transition-all duration-300 border border-cyan-400/30"
+                    >
+                      <FaExternalLinkAlt className="text-xs" />
+                      <span>Visit Live Store</span>
+                    </a>
+                  )}
+                  <button
+                    onClick={onClose}
+                    className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium text-slate-300 bg-surface-card hover:bg-white/10 hover:text-white border border-white/10 transition-colors"
                   >
-                    <FaExternalLinkAlt className="text-xs" />
-                    <span>Visit Live Store</span>
-                  </a>
-                ) : (
-                  <div className="w-full text-center py-2.5 px-4 rounded-xl bg-surface-card border border-white/10 text-xs text-slate-400">
-                    Client Production Storefront &middot; Softvence IT
-                  </div>
-                )}
-                <button
-                  onClick={onClose}
-                  className="w-full sm:w-auto px-5 py-3 rounded-xl text-sm font-medium text-slate-300 bg-surface-card hover:bg-white/10 hover:text-white border border-white/10 transition-colors"
-                >
-                  Close
-                </button>
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
