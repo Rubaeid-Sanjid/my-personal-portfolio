@@ -22,35 +22,36 @@ const Projects = () => {
 
   const categories = [
     { id: "all", name: "Featured Projects" },
-    { id: "shopify", name: "Shopify (CMS)", icon: FaShopify, count: shopifyProjects.length },
+    // { id: "shopify", name: "Shopify (CMS)", icon: FaShopify, count: shopifyProjects.length },
     { id: "fullstack", name: "MERN Stack" },
     { id: "frontend", name: "Frontend & UI" },
   ];
 
   // Combined projects list
-  const allProjectsList = [...shopifyProjects, ...webProjects];
+  // const allProjectsList = [...shopifyProjects, ...webProjects];
+  const allProjectsList = [...webProjects];
 
   const filteredProjects =
     selectedCategory === "all"
       ? [
-          shopifyProjects[0], // HL Store UAE
-          webProjects[0],      // ClassNet
-          shopifyProjects[1], // Ketodeck
-          webProjects[1],      // EduScholar
-          shopifyProjects[2], // Barkbubba
-          shopifyProjects[3], // Necknine
-        ].filter(Boolean)
+        // shopifyProjects[0], // HL Store UAE
+        webProjects[0],      // ClassNet
+        // shopifyProjects[1], // Ketodeck
+        webProjects[1],      // EduScholar
+        // shopifyProjects[2], // Barkbubba
+        // shopifyProjects[3], // Necknine
+      ].filter(Boolean)
       : selectedCategory === "shopify"
-      ? shopifyProjects
-      : selectedCategory === "fullstack"
-      ? webProjects.filter(
-          (p) =>
-            p.technologies?.includes("Node.js") ||
-            p.technologies?.includes("MongoDB") ||
-            p.technologies?.includes("Express Js") ||
-            p.technologies?.includes("Express JS")
-        )
-      : webProjects.filter((p) => p.technologies?.includes("React JS"));
+        ? shopifyProjects
+        : selectedCategory === "fullstack"
+          ? webProjects.filter(
+            (p) =>
+              p.technologies?.includes("Node.js") ||
+              p.technologies?.includes("MongoDB") ||
+              p.technologies?.includes("Express Js") ||
+              p.technologies?.includes("Express JS")
+          )
+          : webProjects.filter((p) => p.technologies?.includes("React JS"));
 
   return (
     <section id="projects" className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 relative">
@@ -101,21 +102,19 @@ const Projects = () => {
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 ${
-                    selectedCategory === cat.id
-                      ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-glow"
-                      : "text-slate-400 hover:text-white hover:bg-white/[0.05]"
-                  }`}
+                  className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 ${selectedCategory === cat.id
+                    ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-glow"
+                    : "text-slate-400 hover:text-white hover:bg-white/[0.05]"
+                    }`}
                 >
                   {Icon && <Icon className={selectedCategory === cat.id ? "text-white" : "text-[#96BF48]"} />}
                   <span>{cat.name}</span>
                   {cat.count && (
                     <span
-                      className={`text-[10px] px-1.5 py-0.5 rounded-full font-mono ${
-                        selectedCategory === cat.id
-                          ? "bg-white/20 text-white"
-                          : "bg-white/10 text-slate-300"
-                      }`}
+                      className={`text-[10px] px-1.5 py-0.5 rounded-full font-mono ${selectedCategory === cat.id
+                        ? "bg-white/20 text-white"
+                        : "bg-white/10 text-slate-300"
+                        }`}
                     >
                       {cat.count}
                     </span>
