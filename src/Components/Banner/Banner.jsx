@@ -1,5 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import profileImg from "../../assets/images/Portfolio_Profile.jpg";
+import profileImg from "../../assets/images/Sanjid's_Portrait.png";
 import resume from "../../assets/resume/Rubaeid_Sanjid_Resume.pdf";
 import { motion } from "framer-motion";
 import {
