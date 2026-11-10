@@ -32,7 +32,9 @@ const Contact = () => {
     setLoading(true);
     setStatus({ type: "", message: "" });
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    const accessKey =
+      import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ||
+      "3a322075-fd21-4ed0-b35f-7f2573629e42";
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -106,7 +108,7 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight"
           >
-            Let's Build Something <span className="text-gradient">Exceptional</span>
+            Let&apos;s Build Something <span className="text-gradient">Exceptional</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -115,7 +117,7 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-slate-400 text-base sm:text-lg"
           >
-            Have a project in mind, looking for a full-stack engineer, or just want to say hi? I'd love to hear from you.
+            Have a project in mind, looking for a full-stack engineer, or just want to say hi? I&apos;d love to hear from you.
           </motion.p>
         </div>
 
@@ -227,7 +229,7 @@ const Contact = () => {
               Send a Direct Message
             </h3>
             <p className="text-slate-400 text-sm mb-6">
-              Fill in your details below and I'll get back to you promptly.
+              Fill in your details below and I&apos;ll get back to you promptly.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
