@@ -13,9 +13,10 @@ import { HiDownload, HiSparkles } from "react-icons/hi";
 
 const Banner = () => {
   const stats = [
-    { label: "Active Role", value: "Frontend Dev" },
+    { label: "Active Role", value: "Frontend Developer" },
     { label: "Company", value: "Softvence IT" },
     // { label: "CGPA (AIUB)", value: "3.60 / 4.0" },
+    { label: "Bachelor Of Science", value: "Software Engineering" },
     { label: "Post-Grad", value: "MSc Data Science" },
   ];
 

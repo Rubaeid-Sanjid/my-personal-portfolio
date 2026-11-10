@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaBriefcase, FaCheckCircle, FaShopify, FaReact, FaHtml5, FaCss3 } from "react-icons/fa";
 import { FaDroplet } from "react-icons/fa6";
 import { HiSparkles } from "react-icons/hi";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiJavascript, } from "react-icons/si";
 
 const Experience = () => {
   const experiences = [
@@ -25,6 +25,7 @@ const Experience = () => {
         // { name: "React.js", icon: FaReact, color: "#61DAFB" },
         { name: "HTML5", icon: FaHtml5, color: "#E34F26" },
         { name: "CSS3", icon: FaCss3, color: "#1572B6" },
+        { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
         { name: "Liquid", icon: FaDroplet, color: "#38BDF8" },
       ],
     },
