@@ -11,7 +11,8 @@ const Contact = () => {
     subject: "",
     message: "",
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState({ type: "", message: "" });
 
   const emailAddress = "rubaeid.sanjid@gmail.com";
 
@@ -26,17 +27,60 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Pre-fill mailto link
-    const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
-      formData.subject || `Portfolio Contact from ${formData.name}`
-    )}&body=${encodeURIComponent(
-      `Hi Rubaeid,\n\nName: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
-    window.location.href = mailtoUrl;
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    setLoading(true);
+    setStatus({ type: "", message: "" });
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject || `Portfolio Contact from ${formData.name}`,
+          message: formData.message,
+          from_name: formData.name,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus({
+          type: "success",
+          message: "Thank you! Your message has been sent successfully. I will get back to you soon.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        setTimeout(() => {
+          setStatus({ type: "", message: "" });
+        }, 6000);
+      } else {
+        setStatus({
+          type: "error",
+          message: result.message || "Something went wrong. Please try again or email me directly.",
+        });
+      }
+    } catch {
+      setStatus({
+        type: "error",
+        message: "Failed to connect to the mail service. Please check your network or email me directly.",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -119,11 +163,10 @@ const Contact = () => {
 
               <button
                 onClick={handleCopyEmail}
-                className={`p-3 rounded-xl transition-all duration-300 shrink-0 ${
-                  copied
-                    ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/40"
-                    : "bg-surface-card hover:bg-cyan-500/20 text-slate-300 hover:text-cyan-400 border border-white/10"
-                }`}
+                className={`p-3 rounded-xl transition-all duration-300 shrink-0 ${copied
+                  ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/40"
+                  : "bg-surface-card hover:bg-cyan-500/20 text-slate-300 hover:text-cyan-400 border border-white/10"
+                  }`}
                 title={copied ? "Copied!" : "Copy Email"}
                 aria-label="Copy Email Address"
               >
@@ -250,15 +293,50 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:shadow-glow hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 border border-cyan-400/30 text-sm sm:text-base mt-2"
+                disabled={loading}
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:shadow-glow hover:scale-[1.01] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all duration-300 border border-cyan-400/30 text-sm sm:text-base mt-2"
               >
-                <FaPaperPlane className="text-sm" />
-                <span>Send Message</span>
+                {loading ? (
+                  <>
+                    <svg
+                      className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      />
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      />
+                    </svg>
+                    <span>Sending Message...</span>
+                  </>
+                ) : (
+                  <>
+                    <FaPaperPlane className="text-sm" />
+                    <span>Send Message</span>
+                  </>
+                )}
               </button>
 
-              {submitted && (
-                <div className="p-3 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs text-center animate-fadeIn">
-                  ✓ Message drafted! Opening your email client to dispatch.
+              {status.message && (
+                <div
+                  className={`p-3.5 rounded-xl border text-xs sm:text-sm text-center font-medium animate-fadeIn ${status.type === "success"
+                    ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-300"
+                    : "bg-rose-500/15 border-rose-500/30 text-rose-300"
+                    }`}
+                >
+                  {status.type === "success" ? "✓ " : "✕ "}
+                  {status.message}
                 </div>
               )}
             </form>
