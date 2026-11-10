@@ -22,7 +22,7 @@ const Projects = () => {
 
   const categories = [
     { id: "all", name: "Featured Projects" },
-    // { id: "shopify", name: "Shopify (CMS)", icon: FaShopify, count: shopifyProjects.length },
+    { id: "shopify", name: "Shopify (CMS)", icon: FaShopify, count: shopifyProjects.length },
     { id: "fullstack", name: "MERN Stack" },
     { id: "frontend", name: "Frontend & UI" },
   ];
@@ -34,12 +34,12 @@ const Projects = () => {
   const filteredProjects =
     selectedCategory === "all"
       ? [
-        // shopifyProjects[0], // HL Store UAE
+        shopifyProjects[0], // HL Store UAE
         webProjects[0],      // ClassNet
-        // shopifyProjects[1], // Ketodeck
+        shopifyProjects[1], // Ketodeck
         webProjects[1],      // EduScholar
-        // shopifyProjects[2], // Barkbubba
-        // shopifyProjects[3], // Necknine
+        shopifyProjects[2], // Barkbubba
+        shopifyProjects[3], // Necknine
       ].filter(Boolean)
       : selectedCategory === "shopify"
         ? shopifyProjects
