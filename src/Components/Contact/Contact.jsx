@@ -32,9 +32,17 @@ const Contact = () => {
     setLoading(true);
     setStatus({ type: "", message: "" });
 
-    const accessKey =
-      import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ||
-      "3a322075-fd21-4ed0-b35f-7f2573629e42";
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+    if (!accessKey) {
+      setLoading(false);
+      setStatus({
+        type: "error",
+        message:
+          "Email service is not configured (Missing VITE_WEB3FORMS_ACCESS_KEY). Please email me directly.",
+      });
+      return;
+    }
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
