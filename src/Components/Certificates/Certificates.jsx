@@ -38,20 +38,20 @@ const Certificates = () => {
       image: "https://i.postimg.cc/4yjbzmCt/Deans-Award.jpg",
       link: "#",
     },
-    {
-      title: "Higher Secondary Certificate (HSC)",
-      issuer: "Education Board",
-      category: "Science",
-      image: "https://i.postimg.cc/mDgNrGBw/HSC-Certificate.jpg",
-      link: "#",
-    },
-    {
-      title: "Secondary School Certificate (SSC)",
-      issuer: "Education Board",
-      category: "Science",
-      image: "https://i.postimg.cc/WpynRfD3/SSC-Certification.jpg",
-      link: "#",
-    },
+    // {
+    //   title: "Higher Secondary Certificate (HSC)",
+    //   issuer: "Education Board",
+    //   category: "Science",
+    //   image: "https://i.postimg.cc/mDgNrGBw/HSC-Certificate.jpg",
+    //   link: "#",
+    // },
+    // {
+    //   title: "Secondary School Certificate (SSC)",
+    //   issuer: "Education Board",
+    //   category: "Science",
+    //   image: "https://i.postimg.cc/WpynRfD3/SSC-Certification.jpg",
+    //   link: "#",
+    // },
   ];
 
   return (
