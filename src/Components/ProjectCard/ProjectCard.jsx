@@ -57,7 +57,7 @@ const ProjectCard = ({ project, onPreview }) => {
         >
           <img
             src={project.image}
-            alt={project.name}
+            alt={`${project.name} - Web Development Project by Sheikh Rubaeid Sanjid`}
             className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
           />
